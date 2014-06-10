@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2422596387">
+    <data-source source="LOCAL" name="Rails acidnametest: development" uuid="5e279127-b087-4640-acb7-545b5bd53845">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:acidnametest_dev</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcfdfcddfc5df9ddfc3dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails acidnametest: test" uuid="7a8a6a07-31db-4ee3-b122-87bfed923b02">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:acidnametest_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcfdfcddfc5df9ddfc3dfce</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails acidnametest: production" uuid="c499b267-a096-4022-b80e-2f8151ab346d">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:acidnametest</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

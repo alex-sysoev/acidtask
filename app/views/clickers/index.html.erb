@@ -1,0 +1,31 @@
+<section id="clickers">
+  <%= content_tag( 'h1', 'Task for AcidLabs' ) %>
+  <%= content_tag( 'h2', 'Clickers' ) %>
+  <% if @clickers.any? %>
+  <div class="table-wrapper">
+  <table cellspacing="0">
+    <thead>
+        <%= content_tag( 'th', 'ID', width: '50' ) %>
+        <%= content_tag( 'th', 'Name', width: '100' ) %>
+        <%= content_tag( 'th', 'IP', width: '100' ) %>
+        <%= content_tag( 'th', 'Time', width: '100' ) %>
+    </thead>
+    <tbody>
+        <% @clickers.each do |clicker| %>
+            <tr>
+                <%= content_tag( 'td', clicker.id ) %>
+                <%= content_tag( 'td', clicker.name ) %>
+                <%= content_tag( 'td', clicker.ip ) %>
+                <%= content_tag( 'td', clicker.created_at.strftime('%d, %B, %H:%M') ) %>
+            </tr>
+        <% end %>
+    </tbody>
+  </table>
+  </div>
+  <% else %>
+    <p>
+      No one clicked on your button at the App
+    </p>
+  <% end %>
+</section>
+

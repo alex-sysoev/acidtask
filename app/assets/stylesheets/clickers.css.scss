@@ -1,0 +1,30 @@
+#clickers{
+  text-align: center;
+  h1{
+    font-size: 25px;
+    color: #730E15;
+  }
+  h2{
+    font-size: 18px;
+    color: #B00100;
+  }
+  .table-wrapper{
+    margin: 100px auto;
+    width: 350px;
+    table{
+      border: 1px solid #CCCCCC; border-width: 0 1px 0 1px;
+      th{
+        color: #730E15;
+        text-align: center;
+        border: 1px solid #CCCCCC; border-width: 1px 0 1px 0;
+        padding: 10px 0;
+      }
+      td{
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #CCCCCC;
+        padding: 10px 0;
+      }
+    }
+  }
+}
