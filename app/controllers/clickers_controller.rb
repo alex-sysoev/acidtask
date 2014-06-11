@@ -12,7 +12,7 @@ class ClickersController < ApplicationController
     error   = ''
     status  = 404
 
-    if !params[:name].nil?
+    if !params[:name].nil? #&& !params[:signature].nil? && Clicker.verify_signature(params[:name],params[:signature])
       params.merge!( { ip: request.remote_ip } )
       clicker = Clicker.new( clicker_params )
       if clicker.save

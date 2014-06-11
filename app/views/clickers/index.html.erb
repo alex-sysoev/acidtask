@@ -6,9 +6,9 @@
   <table cellspacing="0">
     <thead>
         <%= content_tag( 'th', 'ID', width: '50' ) %>
-        <%= content_tag( 'th', 'Name', width: '100' ) %>
-        <%= content_tag( 'th', 'IP', width: '100' ) %>
-        <%= content_tag( 'th', 'Time', width: '100' ) %>
+        <%= content_tag( 'th', 'Name', width: '200' ) %>
+        <%= content_tag( 'th', 'IP', width: '200' ) %>
+        <%= content_tag( 'th', 'Time', width: '400' ) %>
     </thead>
     <tbody>
         <% @clickers.each do |clicker| %>
@@ -16,7 +16,7 @@
                 <%= content_tag( 'td', clicker.id ) %>
                 <%= content_tag( 'td', clicker.name ) %>
                 <%= content_tag( 'td', clicker.ip ) %>
-                <%= content_tag( 'td', clicker.created_at.strftime('%d, %B, %H:%M') ) %>
+                <%= content_tag( 'td', clicker.created_at.strftime('%d %B, %H:%M:%S') ) %>
             </tr>
         <% end %>
     </tbody>
